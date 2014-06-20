@@ -50,9 +50,9 @@ while divisors(triangle(start)) <= 500
   count = divisors(triangle(start))
 end
 
-puts start
-puts triangle(start)
-puts divisors(triangle(start))
+puts start  #12375
+puts triangle(start) #76576500
+puts divisors(triangle(start)) #576 divisors
 
         
 #Have not checked answer as project euler is down.
