@@ -12,7 +12,6 @@ def count_numbers(n)
 	array.each do |number|
 		s = english_number(number)
 		count +=s.scan(/[A-Za-z]/).count
-
 	end
 	return count
 end
