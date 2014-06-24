@@ -24,10 +24,14 @@ end
 
  def amicable(num)
  	sum = sum_of_divisors(num)
- 	if num == sum_of_divisors(sum)
- 		num
+ 	if sum == num
+ 	else
+ 		if num == sum_of_divisors(sum)
+ 			num
+ 		end
  	end
  end
+
    amicable_num =[]
      (1..10000).each do |num|
     	amicable_num << amicable(num) unless amicable(num) == nil
@@ -37,3 +41,5 @@ end
 
 print amicable_num
 puts amicable_num.inject(:+) #40285
+
+#31626?
