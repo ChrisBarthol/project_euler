@@ -9,3 +9,4 @@ def get_digits(n)
 end
 
 puts get_digits(factorial_100).inject(:+)
+p get_digits(10)
