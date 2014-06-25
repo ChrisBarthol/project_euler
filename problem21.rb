@@ -16,7 +16,7 @@ def sum_of_divisors(num)
 	(2..Math.sqrt(num)).each do |value|
 		if num%value==0
 			divisors << value
-			divisors << (num/value)
+			divisors << (num/value) if num/value != value
 		end
 	end
 	divisors.inject(:+)
@@ -39,7 +39,5 @@ end
 
 
 
-print amicable_num
-puts amicable_num.inject(:+) #40285
-
-#31626?
+#print amicable_num
+#puts amicable_num.inject(:+) #31626
